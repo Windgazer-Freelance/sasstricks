@@ -7,7 +7,7 @@ It will generate an :after pseudo-element which will clear any floats.
 */
 %clearFloat {
 	&:after {
-		content: ".";
+		content: "\a0 ";
 		display: block;
 		clear: both;
 		width: 0;
