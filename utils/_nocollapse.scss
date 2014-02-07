@@ -1,0 +1,12 @@
+/*
+# NoCollapse
+
+This extension is for blocking margin-collapse. Any container that needs
+to block margin-collapse can safely `@extend` this fragment.
+*/
+%nocollapse {
+	margin-bottom: -1px;
+	margin-top: -1px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
