@@ -1,0 +1,23 @@
+/*
+Just a file for implementing the required styles for the examples.
+*/
+@import "utils";
+
+.gallery {
+    @extend %reset;
+    @extend %clearFloat;
+    background: #222;
+    border: 0.2em solid black;
+    border-radius: 0.75em;
+    box-shadow: inset 0 0 1em 1em rgba( 0,0,0 ,0.75 );
+    padding: 1em 0 0 1em;
+    & > .photo {
+        float: left;
+        background: rgba( 64,64,64 ,0.5 );
+        margin: 0 1em 1em 0;
+        padding: 0.5em;
+        & img {
+            width: 4em;
+        }
+    }
+}

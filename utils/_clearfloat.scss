@@ -4,6 +4,13 @@
 This extension is for clearing floats in a container. Any container that
 needs to clear floats contained within it may `@extend` this fragment.
 It will generate an :after pseudo-element which will clear any floats.
+
+```
+<ul class="gallery">
+	<li class="photo"><img alt="ack" src="data:image/gif;base64,R0lGODlhFQAVAIAAAAAAAP///yH5BAAAAAAALAAAAAAVABUAAAJQhA8RaYunYnJzStawW3TDynEfxkhi10ShaSnPd76tms0X+WyuuoK7WALBXBodkcb75YK9pDJWW3oyHSSuGj0BhaRQqhekMn/GHYQcRTTDgAIAOw==" /></li>
+	<li class="photo"><img alt="ack" src="data:image/gif;base64,R0lGODlhFQAVAIAAAAAAAP///yH5BAAAAAAALAAAAAAVABUAAAJQhA8RaYunYnJzStawW3TDynEfxkhi10ShaSnPd76tms0X+WyuuoK7WALBXBodkcb75YK9pDJWW3oyHSSuGj0BhaRQqhekMn/GHYQcRTTDgAIAOw==" /></li>
+</ul>
+```
 */
 %clearFloat {
 	&:after {

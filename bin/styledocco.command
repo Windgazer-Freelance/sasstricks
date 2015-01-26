@@ -10,5 +10,6 @@
 
 cd "`dirname "$0"`"
 cd ..
+rm -R target/docs
 mkdir target
 styledocco -n SassTricks -o target/docs
