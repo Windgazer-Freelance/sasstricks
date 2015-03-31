@@ -1,0 +1,27 @@
+/*
+#Social Coding
+
+The social coding font is one of hand-picked glyphs for use in coding and/or social media
+related projects.
+
+```
+<p class="socialc big">=`twinaHCJ</p>
+<p class="socialc medium">=`twinaHCJ</p>
+<p class="socialc small">=`twinaHCJ</p>
+```
+*/
+%social-coding {
+    font-family: 'social-coding';
+    @at-root {
+        @font-face {
+          font-family: 'social-coding';
+          src: url($font_root + '/social-coding/social-coding.eot?40094610');
+          src: url($font_root + '/social-coding/social-coding.eot?40094610#iefix') format('embedded-opentype'),
+               url($font_root + '/social-coding/social-coding.woff?40094610') format('woff'),
+               url($font_root + '/social-coding/social-coding.ttf?40094610') format('truetype'),
+               url($font_root + '/social-coding/social-coding.svg?40094610#social-coding') format('svg');
+          font-weight: normal;
+          font-style: normal;
+        }
+    }
+}

@@ -1,7 +1,9 @@
 /*
 Just a file for implementing the required styles for the examples.
 */
+$font_root: "/assets";
 @import "utils";
+@import "fonts";
 
 .gallery {
     @extend %reset;
@@ -20,4 +22,21 @@ Just a file for implementing the required styles for the examples.
             width: 4em;
         }
     }
+}
+
+.cardo-n {
+    @extend %cardo-normal;
+}
+
+.socialc {
+    @extend %social-coding;
+    letter-spacing: 0.5em;
+}
+
+.big {
+    font-size: 1.5em;
+}
+
+.small {
+    font-size: 0.5em;
 }

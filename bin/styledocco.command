@@ -13,3 +13,4 @@ cd ..
 rm -R target/docs
 mkdir -p target
 styledocco --verbose -n SassTricks -o target/docs
+cp -R assets target/docs/assets
