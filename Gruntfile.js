@@ -27,6 +27,7 @@ module.exports = function(grunt) {
                         expand: true, flatten: false,
                         src: [
                             "bower.json",
+                            "README.md",
                             "assets/**/*",
                             "**/_*.scss"
                         ],
