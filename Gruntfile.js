@@ -27,9 +27,21 @@ module.exports = function(grunt) {
                         expand: true, flatten: false,
                         src: [
                             "bower.json",
+                            "assets/**/*",
                             "**/_*.scss"
                         ],
                         dest: "target/release.git/"
+                    }
+                ]
+            },
+            pages: {
+                files: [
+                    {
+                        expand: true, flatten: false,
+                        src: [
+                            "assets/**/*"
+                        ],
+                        dest: "target/pages.git/"
                     }
                 ]
             }
@@ -279,6 +291,7 @@ module.exports = function(grunt) {
         "render",
         [
             "copy:release",
+            "copy:pages",
             "sass:dev",
             "sd"
         ]
