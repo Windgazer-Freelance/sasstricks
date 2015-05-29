@@ -1,0 +1,40 @@
+/*
+# Vendor Prefix
+
+Some of the more exciting CSS3 properties are not 100% squarred out yet. The problem with
+these is that they then must still be vendor prefixed. Not a big thing, not even all that
+hard to do, but could stil be anoying.
+
+Hence, the very easy example of how to do this using SCSS.
+
+```css
+.prefixExample {
+    @include vendor-prefix(transform, rotate(0.1turn));
+}
+```
+
+Which should turn into the following:
+
+```css
+.prefixExample {
+  -webkit-transform: rotate(0.05turn);
+  -moz-transform: rotate(0.05turn);
+  -ms-transform: rotate(0.05turn);
+  -o-transform: rotate(0.05turn);
+  transform: rotate(0.05turn);
+}
+
+```
+
+Which should looke something like the following:
+```
+<p class="prefixExample">Just a quick and dirty example of using SCSS for prefixing.</p>
+```
+*/
+@mixin vendor-prefix($name, $argument...) {
+    -webkit-#{$name}: #{$argument};
+       -moz-#{$name}: #{$argument};
+        -ms-#{$name}: #{$argument};
+         -o-#{$name}: #{$argument};
+            #{$name}: #{$argument};
+}

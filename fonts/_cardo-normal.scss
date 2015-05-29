@@ -1,0 +1,18 @@
+/*
+#Cardo Normal
+
+The Cardo family is a nice traditional serif set that still prints/reads well at
+relatively small font-sizes, I like it ;)
+
+```
+<p class="cardo-n big">Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
+<p class="cardo-n medium">Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
+<p class="cardo-n small">Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
+```
+*/
+%cardo-normal {
+    font-family: 'Cardo', serif;
+    @at-root {
+        @import url(http://fonts.googleapis.com/css?family=Cardo);
+    }
+}
