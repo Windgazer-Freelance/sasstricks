@@ -4,6 +4,7 @@
     "fullName": "SASS Tricks",
     "safeName": "SassTricks",
     "description": "A collection of reusable SCSS snippets,packaged to be used right away.",
+    "main": "_utils.scss",
     "id": "na"
   },
   "author": {
@@ -11,7 +12,7 @@
     "email": "martin@windgazer.nl",
     "url": "http://www.windgazer.nl/"
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "build": {
     "target": "target/release.git"
   },
@@ -35,7 +36,6 @@
   },
   "engine": "node 0.8.12",
   "scripts": {
-    "install": "bower install;grunt",
     "release": "grunt release"
   },
   "repository": {

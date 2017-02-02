@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         buildVersion: grunt.template.today("yyyymmddHHMM"),
         // Task configuration.
         bumpup: {
-            files: ["package.json","bower.json"],
+            files: ["package.json"],
             options: {
                 normalize: true
             }
@@ -26,7 +26,6 @@ module.exports = function(grunt) {
                     {
                         expand: true, flatten: false,
                         src: [
-                            "bower.json",
                             "README.md",
                             "assets/**/*",
                             "**/_*.scss"
