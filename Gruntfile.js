@@ -26,9 +26,11 @@ module.exports = function(grunt) {
                     {
                         expand: true, flatten: false,
                         src: [
+                            "package.json",
                             "README.md",
                             "assets/**/*",
-                            "**/_*.scss"
+                            "**/_*.scss",
+                            "!target/**/*"
                         ],
                         dest: "target/release.git/"
                     }
